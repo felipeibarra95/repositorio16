@@ -32,13 +32,13 @@
           </div>
         </div>
       </div>
-        <div id="novedades" class="row py-4">
+        <div id="novedades" class="row py-2">
           <div class="col-md-5 offset-md-2 py-3">
             <h2>Novedades</h2>
             <ul class="lista-novedades">
               {{#each novedades}}
               <li>
-                <a href="javascript:void(0)" data-toggle="modal" data-target="#modal{{id}}"><img src="images/novedades01.jpg" alt="novedades">{{titulo}}</a>
+                <a href="javascript:void(0)" data-toggle="modal" data-target="#modal{{id}}"><img src="{{imagen}}" width="120" alt="novedades">{{titulo}}</a>
               </li>
               {{/each}}
             </ul>
@@ -55,29 +55,31 @@
                 </div>
                 <div class="modal-body">
                   <h6> {{subtitulo}} </h6>
+                  
                   <p> {{cuerpo}} </p>
                 </div>
                </div>
               </div>
             </div>
             {{/each}}
-          
-      </div>     
-      <div id="historia" class="row align-items-center py-4">
-        <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
+          <div id="historia" class="row py-4 col-lg-4 staff ">
+            <div class="row align-items my-2  py-2">
+                <div class="col-lg-4  row py-3 offset-1 ">
           <img src="images/historia_1.jpg" alt="historia 1" class="img-fluid">
         </div>
-        <div class="col-lg-2 col-md-3 d-none d-sm-block">
+          <div class="col-lg-4  row py-3 offset-2">
           <img src="images/historia_2.jpg" alt="historia 2" class="img-fluid">
         </div>
-        <div class="col-12 d-sm-none">
-          <img src="images/historia_3.jpg" alt="historia 3" class="img-fluid">
-        </div>
-          <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
+           </div>
+        
+
+         <div class="row py-2 offset-1">
             <h2>Historia</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maiores repudiandae incidunt sint id nostrum, animi porro molestias consequatur repellendus exercitationem enim.</p>
           </div>
       </div>
+      </div>     
+      
       <div id="nosotros" class="row align-items-stretch my-3 staff py-4">
         <div class="col-lg-8 offset-lg-2">
           <h2>Nosotros</h2>
